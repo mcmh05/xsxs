@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>이상기체 법칙 계산기</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>이상기체 법칙 계산기</h1>
+    <p>PV = nRT (R = 8.314 J/(mol·K))</p>
+    <p class="instruction">3개 값을 입력하면 나머지 1개 값을 자동 계산합니다</p>
+    
+    <form id="gasForm">
+      <div class="input-group">
+        <label for="pressure">압력 (P, Pa):</label>
+        <input type="number" id="pressure" step="any" placeholder="계산할 값은 비워두세요">
+      </div>
+      
+      <div class="input-group">
+        <label for="volume">부피 (V, m³):</label>
+        <input type="number" id="volume" step="any" placeholder="계산할 값은 비워두세요">
+      </div>
+      
+      <div class="input-group">
+        <label for="moles">몰수 (n, mol):</label>
+        <input type="number" id="moles" step="any" placeholder="계산할 값은 비워두세요">
+      </div>
+      
+      <div class="input-group">
+        <label for="temperature">온도 (T, K):</label>
+        <input type="number" id="temperature" step="any" placeholder="계산할 값은 비워두세요">
+      </div>
+      
+      <button type="submit">계산하기</button>
+    </form>
+    
+    <div id="result" class="result"></div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
